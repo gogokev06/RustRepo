@@ -1,7 +1,7 @@
 # Notes
 > Hoi! So Rust... Yeah completely new to it, but I will try to write what I learn.
 
-Rust is a programming language with natively immutable data types and the variable's data type need to be stated. All the code should be inside functions, all functions start with `fn`, the function you start off with is the `fn main() {}` function. Since Rust is immutable, we need to add `mut` to it so that it can change (it can be different value, but needs to be same type of data) along the code; making it mutable basically. In Rust, the concept of variable ownership is defined as 
+Rust is a programming language with natively immutable data types and the variable's data type need to be stated. All the code should be inside functions, all functions start with `fn`, the function you start off with is the `fn [fileName]() {}` function. Since Rust is immutable, we need to add `mut` to it so that it can change (it can be different value, but needs to be same type of data) along the code; making it mutable basically. In Rust, the concept of variable ownership is defined as 
 
 A breakdown of Rust's fundamental data types. This table explains what they are and why you'd use them.
 
