@@ -27,4 +27,11 @@ A breakdown of Rust's fundamental data types. This table explains what they are 
 | &nbsp;&nbsp;&nbsp;Option | Encodes the possibility of a value being absent. It's either `Some(value)` or `None`. This forces you to handle null cases at compile time, which eliminates a whole class of bugs. | `let last_item: Option<i32> = Some(5);` |
 | &nbsp;&nbsp;&nbsp;Result | The standard for functions that can fail. It's either `Ok(value)` for success or `Err(error)` for failure. This makes error handling explicit and robust. | `// In a function: Ok("Success!")` |
 
-The print command is denoted as `println!()` the "!" at the end means it's a Rust macro.
+The print command is denoted as `println!()` the `!` at the end means it's a Rust macro. Rust's standard library is called `std` where we can import in the input/ouput module to read and write command lines, `use std::io;`. The following is the best way to read and store user input in a variable,
+```
+let mut input: String = String.new();
+io::stdin()
+  .read_line(&mut input)
+  .expect("Failed to read line.");
+```
+
